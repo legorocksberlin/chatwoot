@@ -22,6 +22,12 @@
 </template>
 
 <script>
+
+const script = document.createElement('script');
+script.src = 'https://kuechen-preisportal.de/assets/js/chat.js';
+document.head.appendChild(script);
+
+
 import { mapGetters, mapActions } from 'vuex';
 import { setHeader } from 'widget/helpers/axios';
 import addHours from 'date-fns/addHours';
